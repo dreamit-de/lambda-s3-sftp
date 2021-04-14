@@ -1,8 +1,9 @@
-FROM amazonlinux:1
-LABEL maintainer "YunoJuno <code@yunojuno.com>"
+FROM public.ecr.aws/lambda/python:3.7
+
+#LABEL maintainer "YunoJuno <code@yunojuno.com>"
 
 # Install python3.6
-RUN yum install -y python36
+#RUN yum install -y python36
 
 # Install zip and pip-tools so we can manage requirements
 RUN yum install -y zip && \
